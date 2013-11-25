@@ -1,7 +1,7 @@
 7seg
 ====
 
-7seg and Led library for Arduino. You can feel free for use on your code. Profitable projects send me a message about
+7seg and Led library for Arduino. You can feel free for use on your code. Profitable projects send to me a message about
 the project and the company.
 
 
