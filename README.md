@@ -1,7 +1,9 @@
 7seg
 ====
 
-7seg and Led library for Arduino
+7seg and Led library for Arduino. You can feel free for use on your code. Profitable projects send me a message about
+the project and the company.
+
 
 Introduction
 ------------
@@ -20,7 +22,9 @@ Usage
 
 main.c
 
-    SeteSeg * seg = seteSeg_create (6, 0, on);
+    char cathod = 0; //Anode 7 Seg display
+    char on = 0;
+    SeteSeg * seg = seteSeg_create (6, cathod, on);
         
     seteSeg_set_dot (seg, on); // Decimal point dot
     seteSeg_print_hex (seg, 0xa); // Show "A" on display
