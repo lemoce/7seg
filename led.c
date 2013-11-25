@@ -38,9 +38,9 @@ Led * led_create (int numPort, char isOn)
   led->isOn = isOn;
   
   if (isOn) 
-    led_on(led);
+    led_on (led);
   else
-    led_off(led);
+    led_off (led);
 
   return led;
 }
