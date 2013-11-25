@@ -22,9 +22,10 @@ Usage
 
 main.c
 
+    int arduinoPort = 6; // Keep in mind I need 8 ports IO6 to IO13. (a,b,c,d,e,f,g,dp)
     char cathod = 0; //Anode 7 Seg display
     char on = 0;
-    SeteSeg * seg = seteSeg_create (6, cathod, on);
+    SeteSeg * seg = seteSeg_create (arduinoPort, cathod, on);
         
     seteSeg_set_dot (seg, on); // Decimal point dot
     seteSeg_print_hex (seg, 0xa); // Show "A" on display
