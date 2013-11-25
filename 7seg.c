@@ -54,21 +54,22 @@ void seteSeg_set_seg (SeteSeg * my7Seg, int i, char isOn)
     led_off (my7Seg->segs[i]);
 }
 
-void seteSeg_print (SeteSeg * my7Seg, char pattern[]) {
+void seteSeg_print (SeteSeg * my7Seg, char pattern[])
+{
   for (int i = 0; i<7; i++)
     {
-      seteSeg_set_seg(my7Seg, i, pattern[i]);
+      seteSeg_set_seg (my7Seg, i, pattern[i]);
     }
 }
 
 void seteSeg_clean (SeteSeg * my7Seg) 
 {
-  seteSeg_print(my7Seg, seven_clean);
+  seteSeg_print (my7Seg, seven_clean);
 }
 
 void seteSeg_print_hex (SeteSeg * my7Seg, int hex) 
 {
-  if(hex > 0xf || hex < 0x0)
+  if (hex > 0xf || hex < 0x0)
     {
       seteSeg_print (my7Seg, error);
     }
